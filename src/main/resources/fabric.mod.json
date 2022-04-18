@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "net.Settordici.testmod.TestMod"
+    ],
+    "client": [
+      "net.Settordici.testmod.TestClientMod"
     ]
   },
   "mixins": [
