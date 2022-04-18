@@ -3,6 +3,7 @@
 
   "block.testmod.short_grass": "Short Grass",
   "block.testmod.test_block": "Test Block",
+  "block.testmod.little_grass": "Little Grass",
 
   "itemGroup.testmod.test": "Test Tab"
 }

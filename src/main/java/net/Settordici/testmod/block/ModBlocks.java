@@ -1,6 +1,7 @@
 package net.Settordici.testmod.block;
 
 import net.Settordici.testmod.TestMod;
+import net.Settordici.testmod.block.custom.LittleGrass;
 import net.Settordici.testmod.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -18,6 +19,9 @@ public class ModBlocks {
 
     public static final Block SHORT_GRASS = registerBlock("short_grass",
             new GrassBlock(FabricBlockSettings.copy(Blocks.GRASS).strength(4.0f).nonOpaque().breakInstantly()), ModItemGroup.TEST);
+
+    public static final Block LITTLE_GRASS = registerBlock("little_grass",
+            new LittleGrass(FabricBlockSettings.copy(Blocks.GRASS).strength(4.0f).nonOpaque().breakInstantly().noCollision()), ModItemGroup.TEST);
 
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
