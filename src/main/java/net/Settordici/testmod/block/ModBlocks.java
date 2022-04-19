@@ -18,7 +18,7 @@ public class ModBlocks {
             new Block(FabricBlockSettings.of(Material.METAL).strength(6f).requiresTool()), ModItemGroup.TEST);
 
     public static final Block LITTLE_GRASS = registerBlock("little_grass",
-            new LittleGrass(FabricBlockSettings.copy(Blocks.GRASS).strength(4.0f).nonOpaque().breakInstantly().noCollision()), ModItemGroup.TEST);
+            new LittleGrass(FabricBlockSettings.copy(Blocks.GRASS).nonOpaque().breakInstantly().noCollision()), ModItemGroup.TEST);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
