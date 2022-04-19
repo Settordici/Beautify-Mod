@@ -4,12 +4,12 @@
   "version": "${version}",
 
   "name": "Beautify Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "description": "Makes your worlds even more beautiful by adding little details in every biome.",
   "authors": [
     "Settordici"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/beautify",
     "sources": "https://github.com/Settordici/Beautify-Mod"
   },
 
