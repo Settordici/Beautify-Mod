@@ -12,6 +12,5 @@ public class ModRegistries {
         FlammableBlockRegistry instance = FlammableBlockRegistry.getDefaultInstance();
 
         instance.add(ModBlocks.LITTLE_GRASS, 60, 100);
-        instance.add(ModBlocks.LEAF_CARPET, 60, 100);
     }
 }
