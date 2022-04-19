@@ -6,7 +6,7 @@
   "name": "Test Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Settordici!"
+    "Settordici"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
@@ -14,7 +14,7 @@
   },
 
   "license": "MIT",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/testmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
