@@ -1,7 +1,6 @@
 package net.Settordici.beautify.block;
 
 import net.Settordici.beautify.BeautifyMod;
-import net.Settordici.beautify.block.custom.LeafCarpet;
 import net.Settordici.beautify.block.custom.LittleGrass;
 import net.Settordici.beautify.item.ModItemGroup;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -17,9 +16,6 @@ public class ModBlocks {
 
     public static final Block LITTLE_GRASS = registerBlock("little_grass",
             new LittleGrass(FabricBlockSettings.copy(Blocks.GRASS).nonOpaque().breakInstantly().noCollision()), ModItemGroup.BEAUTIFY);
-
-    public static final Block LEAF_CARPET = registerBlock("leaf_carpet",
-            new LeafCarpet(FabricBlockSettings.copy(Blocks.GRASS).breakInstantly().nonOpaque().noCollision()), ModItemGroup.BEAUTIFY);
 
     private static Block registerBlock(String name, Block block, ItemGroup group) {
         registerBlockItem(name, block, group);
