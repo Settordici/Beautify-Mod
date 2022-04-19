@@ -11,5 +11,7 @@ public class BeautifyClientMod implements ClientModInitializer {
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LITTLE_GRASS, RenderLayer.getCutout());
         ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> BiomeColors.getGrassColor(world, pos), ModBlocks.LITTLE_GRASS);
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LEAF_CARPET, RenderLayer.getCutout());
+        ColorProviderRegistry.BLOCK.register((state, world, pos, tintIndex) -> BiomeColors.getFoliageColor(world, pos), ModBlocks.LEAF_CARPET);
     }
 }
