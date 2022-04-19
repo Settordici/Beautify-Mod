@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "testmod",
+  "id": "beautify",
   "version": "${version}",
 
-  "name": "Test Mod",
+  "name": "Beautify Mod",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
     "Settordici"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/Settordici/Beautify-Mod"
   },
 
   "license": "MIT",
-  "icon": "assets/testmod/icon.png",
+  "icon": "assets/beautify/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.Settordici.testmod.TestMod"
+      "net.Settordici.beautify.BeautifyMod"
     ],
     "client": [
-      "net.Settordici.testmod.TestClientMod"
+      "net.Settordici.beautify.BeautifyClientMod"
     ]
   },
   "mixins": [
-    "testmod.mixins.json"
+    "beautify.mixins.json"
   ],
 
   "depends": {
