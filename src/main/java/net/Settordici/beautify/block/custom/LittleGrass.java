@@ -1,14 +1,15 @@
 package net.Settordici.beautify.block.custom;
 
-import net.minecraft.block.Block;
-import net.minecraft.block.BlockState;
-import net.minecraft.block.PlantBlock;
-import net.minecraft.block.ShapeContext;
+import net.minecraft.block.*;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
+import net.minecraft.world.World;
 
-public class LittleGrass extends PlantBlock {
+import java.util.Random;
+
+public class LittleGrass extends PlantBlock implements Fertilizable{
 
     public LittleGrass(Settings settings) {
         super(settings);
@@ -23,6 +24,24 @@ public class LittleGrass extends PlantBlock {
     public OffsetType getOffsetType() {
         return OffsetType.XZ;
     }
+
+    @Override
+    public boolean isFertilizable(BlockView world, BlockPos pos, BlockState state, boolean isClient) {
+        return true;
+    }
+
+    @Override
+    public boolean canGrow(World world, Random random, BlockPos pos, BlockState state) {
+        return true;
+    }
+
+    @Override
+    public void grow(ServerWorld world, Random random, BlockPos pos, BlockState state) {
+        //BlockPos pos_ = new BlockPos(pos);
+        BlockState state_ = Blocks.GRASS.getDefaultState();
+        world.setBlockState(pos, state_);
+    }
+
 
     /*@Override
     protected boolean canPlantOnTop(BlockState floor, BlockView world, BlockPos pos) {
