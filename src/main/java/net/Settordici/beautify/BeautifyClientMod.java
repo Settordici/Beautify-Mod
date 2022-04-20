@@ -7,6 +7,8 @@ import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.client.render.RenderLayer;
 
 public class BeautifyClientMod implements ClientModInitializer {
+
+
     @Override
     public void onInitializeClient() {
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.LITTLE_GRASS, RenderLayer.getCutout());

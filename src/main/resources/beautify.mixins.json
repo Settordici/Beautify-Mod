@@ -4,6 +4,7 @@
   "package": "net.Settordici.beautify.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
+    "ModFoliageTweaker"
   ],
   "client": [
     "ExampleMixin"
